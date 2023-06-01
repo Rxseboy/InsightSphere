@@ -15,10 +15,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '16'
+      - uses: actions/checkout@v2
+
       - name: Set up Python version
         uses: actions/setup-python@v1
         with:
@@ -62,4 +60,4 @@ jobs:
         with:
           app-name: 'InsightSphere'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_46C71AA1735148C88B9164ADF13E6022 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_71569924A81B495184B23D825443FF57 }}
